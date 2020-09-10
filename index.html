@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="contenido">
+
+            <header class="header">
+
+                <h2 class="textoPrincipal">
+                    Cotiza tu seguro de auto
+                </h2>
+
+            </header>
+
+            <form action="" class="formulario" id="cotizar-seguro">
+
+                <div class="contenido_formulario">
+                    <label for="" class="label">Marca</label>
+
+                    <select name="" id="marca" class="text">
+
+                                   <option value="">- Seleccionar -</option>
+                                   <option value="1">Americano</option>
+                                   <option value="2">Asiatico</option>
+                                   <option value="3">Europeo</option>
+
+                    </select>
+
+                </div>
+
+                <div class="contenido_formulario">
+                    <label for="anio" class="label">Año:</label>
+
+                    <select class="form-control text" id="anio">
+                              
+                    </select>
+
+
+                </div>
+
+                <div class="contenido_formulario box ">
+                    <h3 class="legent">Tipo Seguro</h3>
+
+                    <div class="form-check">
+                        <label class="check-label">
+                                       <input class="check-input" type="radio" name="tipo" value="basico" checked>
+                                       Básico
+                                     </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="check-label">
+                                       <input class="check-input" type="radio" name="tipo" value="completo" >
+                                       Completo
+                                     </label>
+                    </div>
+
+
+                </div>
+
+
+
+                <div id="cargando">
+                    <img src="img/spinner.gif">
+                </div>
+                <div id="resultado"></div>
+
+                <div class="contenido_formulario">
+                    <button type="submit" class="boton" id="cotizar">Cotizar
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
